@@ -15,7 +15,12 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "linux": {
+                "miDebuggerPath": "/usr/bin/gdb",
+            },
+            "windows": {
+                "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            },
             "setupCommands": [
                 {
                     "description": "Abilita la riformattazione per gdb",
