@@ -1,3 +1,8 @@
+/*
+    Program that prints if a number 
+    is prime or not - basic version
+*/
+
 #include <iostream>
 
 using namespace std;
