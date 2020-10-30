@@ -32,7 +32,7 @@ int main()
     }
 
     // Compute result and terminate
-    cout << "Risultato: " << sum / n << endl;
+    cout << "Risultato: " << (float)sum / n << endl;
 
     return 0;
 }
