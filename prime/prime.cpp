@@ -1,3 +1,4 @@
+#include "prime.hpp"
 
 bool isPrime(int n)
 {
