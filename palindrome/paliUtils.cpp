@@ -12,8 +12,8 @@ int getNOfDigits(int number)
     return n;
 }
 
-
-bool isPalindrome(int num, int len)
+// NOTICE how default parameter value is not repeated here
+bool isPalindromeNoArr(int num, int len)
 {
     // If len is negative, we have to understand the length
     // of the number ourselves
@@ -27,5 +27,34 @@ bool isPalindrome(int num, int len)
             return false;
         }
     }
+    return true;
+}
+
+
+bool isPalindromeArr(int num, int len) {
+    
+    if (len < 0) {
+        len = getNOfDigits(num);
+    }    
+
+    // We are supposing a max length of 25 digits
+    if (len > 25) {
+        return false;
+    }
+    int digits[25];
+
+    // Splitting all the digits into an array
+    for (int i = 0; i < len; i++)
+    {
+        digits[i] = splitter(num, i);
+    }
+    
+    // Cheking that 
+    for (int i = 0; i < len / 2; i++) {
+        if (digits[i] != digits[len - i - 1]) {
+            return false;
+        }
+    }
+
     return true;
 }
