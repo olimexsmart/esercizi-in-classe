@@ -1,4 +1,4 @@
-#include "prime.h"
+#include "prime.hpp"
 #include <iostream>
 
 using namespace std;
