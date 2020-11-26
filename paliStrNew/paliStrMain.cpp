@@ -11,14 +11,17 @@ using namespace std;
 
 int main()
 {
+    /*
     int maxLen;
     cout << "Enter max string length: ";
     cin >> maxLen;
     char * input = new char[maxLen];
+    */
+    char input[1000];
 
     cout << "Enter string to check: ";
     // This instead of simple cin because it reads also spaces
-    cin.getline(input, 10); // Dummy call to reset console
+    //cin.getline(input, 10); // Dummy call to reset console
     cin.getline(input, sizeof(input));
     
     // "ciao" -> ciao\0 check this with debugger
@@ -31,7 +34,7 @@ int main()
         cout << "is not palindrome" << endl;
     }
 
-    delete[] input;
+    //delete[] input;
 
     return 0;
 }
