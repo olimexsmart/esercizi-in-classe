@@ -6,8 +6,8 @@
 
 using namespace std;
 
-// int main(int argc, char *argv[]) Same stuff since [] is pointer type
-int main(int argc, char** argv)
+//int main(int argc, char** argv)
+int main(int argc, char *argv[]) // Same stuff since [] is pointer type
 {
     for (int i = 0; i < argc; i++) {
         cout << argv[i] << endl;
